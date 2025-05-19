@@ -4,6 +4,9 @@ from xgboost import XGBClassifier
 import joblib
 from pathlib import Path
 import os
+# Dans votre script d'entraînement (avant sauvegarde):
+import joblib
+joblib.dump(model, 'models/xgboost_model.pkl', compress=3)  # Niveau de compression max
 
 # --- Nouveau code de chargement sécurisé ---
 # 1. Définition du chemin
