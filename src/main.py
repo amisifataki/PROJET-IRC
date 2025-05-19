@@ -1,5 +1,5 @@
 import streamlit as st
-import joblib
+from sklearn.externals import joblib
 import pandas as pd
 from pathlib import Path
 
