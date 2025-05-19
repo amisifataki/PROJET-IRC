@@ -1,8 +1,13 @@
 import streamlit as st
 try:
-    from sklearn.externals import joblib  # Ancienne méthode
-except:
-    import joblib  # Nouvelle méthode
+# En tout premier ligne :
+import sys
+print(f"Python version: {sys.version}", file=sys.stderr)  # Pour vérification
+
+try:
+    from sklearn.externals import joblib
+except ImportError:
+    import joblib
 import pandas as pd
 from pathlib import Path
 
