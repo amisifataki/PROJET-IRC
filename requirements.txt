@@ -1,6 +1,6 @@
 streamlit==1.29.0
 pandas==2.0.3
-scikit-learn==1.3.0  
-xgboost==2.0.0
-joblib==1.3.2  
-numpy==1.24.0
+scikit-learn==1.2.2  # Version compatible avec Python 3.8
+xgboost==1.7.6      # Version stable
+joblib==1.2.0       # Version testée
+numpy==1.23.5
