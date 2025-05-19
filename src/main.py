@@ -1,5 +1,8 @@
 import streamlit as st
-from sklearn.externals import joblib
+try:
+    from sklearn.externals import joblib  # Ancienne méthode
+except:
+    import joblib  # Nouvelle méthode
 import pandas as pd
 from pathlib import Path
 
